@@ -1,7 +1,7 @@
 import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
-const NEXT_PUBLIC_URL = 'https://zizzamia.xyz';
+const NEXT_PUBLIC_URL = 'https://frames-beryl.vercel.app/';
 
 const frameMetadata = getFrameMetadata({
   buttons: [
@@ -9,7 +9,7 @@ const frameMetadata = getFrameMetadata({
       label: 'Click Me',
     },
   ],
-  image: `./park-1.png`,
+  image: `${NEXT_PUBLIC_URL}/park-1.png`,
   input: {
     text: 'Tell me a boat story',
   },
